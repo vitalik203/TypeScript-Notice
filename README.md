@@ -2,7 +2,18 @@
 
 1. the TypeScript has `static types`, instead JavaScript has `dynamic types`
 2. The types in TS are always written in a lower case
-3. In TypeScript there are core types, such as: `number`, `string`, `boolean`, `object`,
+3. In TypeScript there are core types, such as: `any`, `number`, `string`, `boolean`, `object`, `Array<type> or [type1, type2] or any type`, `typle` - **different types of array (when we have an array, that includes a different values with different types)** for instance, and at the same time, it doesnt exist in JavaScript, `enum (enumarated list)` -  its like object and array that includes a constants, and at the same time, it doesnt exist in JavaScript
+
+```tsx
+//Array type
+const arr:Array<number> = [2,6,8]
+```
+
+```tsx
+// Typle example
+const a = [2, "string"]
+a: [number, string]
+```
    **An Example with object typization in TS**
 
 ```tsx
@@ -52,3 +63,8 @@ details: {
 
 ```
 So you have an object type in an object type so to say.
+
+
+```tsx
+[!"enum"]("./enum.jpg")
+```
