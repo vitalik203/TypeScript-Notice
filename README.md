@@ -69,3 +69,14 @@ So you have an object type in an object type so to say.
 ---
 Interface, if saying as simple, its own types, that uses in objects or classes.
 !["interface"](./enum_interface.jpg)
+
+6) Union types - for example (number | string)
+7) To create own type, we need write next - `type TypeName = number;`, or union type, like - `type UnionTypeName = number | string`. And also own union type we can create for object itself, - `type UnionTypeName = {name: string, age: number}`
+8) Function returns type - 
+```ts
+function sayHello(arg1: string, arg2: string): string{
+    return ...
+}
+```
+9) `unknown` type - when we store any values in one variable, we wont get any errors
+10) `never` - it says, the `never` always represent a value, that wont ever happen
