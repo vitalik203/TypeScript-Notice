@@ -67,5 +67,5 @@ So you have an object type in an object type so to say.
 5. Enum in TS
 !["enum"](./enum1.png)
 ---
-Enum, if saying as simple, its a own types, that uses in objects or classes.
+Enum, if saying as simple, its own types, that uses in objects or classes.
 !["enum_interface"](./enum_interface.jpg)
