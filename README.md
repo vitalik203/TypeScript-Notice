@@ -66,5 +66,5 @@ So you have an object type in an object type so to say.
 
 
 ```tsx
-[!"enum"]("./enum.jpg")
+!["enum"]("./enum.jpg")
 ```
