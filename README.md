@@ -8,7 +8,10 @@
 //Array type
 const arr:Array<number> = [2,6,8]
 
-const array number[]: = [2,3,5,7]
+const array: number[] = [2,3,5,7]
+
+//readonly - mean you cant change
+const array: readonly number[] = [2,3,5,7]
 ```
 
 ```tsx
