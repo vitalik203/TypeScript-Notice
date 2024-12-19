@@ -136,9 +136,13 @@ console.log((a as string).length); // Output: 7
 
 ## Utility Types 
 **Partial<Type>**: Makes all properties of a type optional.
+-
 **Required<Type>**: Makes all properties required.
+-
 **Readonly<Type>**: Prevents reassignment of properties.
+-
 **Pick<Type, Keys>**: Selects specific keys from a type.
+-
 **Omit<Type, Keys>**: Excludes specified keys from a type.
 
 SYNTAX - const a: Generic<Type> = {} 
