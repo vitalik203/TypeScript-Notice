@@ -48,7 +48,7 @@ details: {
 This would be the type of such an object:
 
 ```tsx
-const product: {
+const product: object {
   id: string;
   price: number;
   tags: string[];
@@ -69,8 +69,10 @@ details: {
 ```
 So you have an object type in an object type so to say.
 
-5. Enum in TS
+5. Enum - list of constants, which exist on both datatypes: `string and numeric`
 !["enum"](./enum1.png)
+
+
 ---
 Interface, if saying as simple, its own types, that uses in objects or classes.
 !["interface"](./enum_interface.jpg)
@@ -88,6 +90,29 @@ function sayHello(arg1: string, arg2: string): string{
 
 
 ## OOP in TP
+There are three main visibility modifiers in TypeScript.
+
+`public` - (default) allows access to the class member from anywhere
+`private` - only allows access to the class member from within the class
+`protected` - allows access to the class member from itself and any classes that inherit it, which is covered in the inheritance section below
+```tsx
+class Person {
+  private readonly name: string;
+
+  public constructor(name: string) {
+    // name cannot be changed after this initial definition, which has to be either at it's declaration or in the constructor.
+    this.name = name;
+  }
+
+  public getName(): string {
+    return this.name;
+  }
+}
+
+const person = new Person("Jane");
+console.log(person.getName());
+```
+
 ```ts
 class Example{
   //1) create types inside class
@@ -99,3 +124,13 @@ class Example{
   }
 }
 ```
+---
+
+## `as` - TypeScript Casting
+```tsx
+const a: unknown = "Vitalii"
+
+console.log((a as string).length); // Output: 7
+
+```
+
