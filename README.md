@@ -7,6 +7,8 @@
 ```tsx
 //Array type
 const arr:Array<number> = [2,6,8]
+
+const array number[]: = [2,3,5,7]
 ```
 
 ```tsx
@@ -80,3 +82,17 @@ function sayHello(arg1: string, arg2: string): string{
 ```
 9) `unknown` type - when we store any values in one variable, we wont get any errors
 10) `never` - it says, the `never` always represent a value, that wont ever happen
+
+
+## OOP in TP
+```ts
+class Example{
+  //1) create types inside class
+  name: string
+
+  constructor(nameFromInput: string){
+    //2) set for our "name" with this prefix the value "nameFromInput", like this:
+    this.name = nameFromInput 
+  }
+}
+```
